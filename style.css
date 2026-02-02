@@ -1,0 +1,76 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family: cursive;
+    background:linear-gradient(crimson  , mediumvioletred );
+}
+.game{
+    display:flex;
+    width:75%;
+    height:70vh;
+    border-radius: 5px;
+    position:relative;
+    background: linear-gradient(to right ,lightpink 0% , lightpink 50% , lightcoral 50% , lightcoral 100%);
+}
+.player{
+    flex:1;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    padding:30 px;
+    margin-bottom: 20 px;
+    background: transparent;
+    border-radius: 10 px;
+}
+.player--active{
+    border: 20 px solid pink ;
+}
+.name{
+    font-size: 32px;
+    font-weight: bold;
+}
+.score{
+    font-size: 32px;
+    color:purple;
+}
+.current{
+    color:white;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(189, 18, 75) ;
+    width: 150px;
+    height: 90px;
+}
+.current-label{
+    font-size: 20px;
+    color:white;
+    text-align:center;
+}
+.current-score{
+    font-size: 20px;
+}
+.dice{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 86px;
+    border-radius: 12px;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+}
+.btn--roll {
+  top: 60%;
+}
+.btn--hold {
+  top: 67%;
+}
